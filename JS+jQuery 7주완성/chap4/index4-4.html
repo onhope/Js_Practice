@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글자 숨기기, 보이기 예제</title>
+  <script src="../lib/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // 글자 숨기기 버튼을 눌렀을 때
+      $("#showText").click(function() {
+        $("div").hide(); // div 영역의 내용을 숨김
+      })
+      // 글자 보이기 버튼을 눌렀을 때
+      $("#hideText").click(function() {
+        $("div").show(); // div 영역의 내용을 보임
+      })
+    })
+  </script>
+</head>
+<body>
+  <div>안녕하세요. 초보 jquery-3 버전 입니다.</div>
+  <button id="showText">글자보이기</button>
+  <button id="hideText">글자숨이기</button>
+</body>
+</html>
